@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Barahona</title>
+    <style>
+        :root {
+            --bg-color: #0F172A;
+            --text-color: #e2e8f0;
+            --accent-color: #0D9488;
+            --section-bg: #1E293B;
+            --hover-accent: #14B8A6;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo {
+            height: 50px;
+            width: auto;
+        }
+
+        header {
+            background-color: var(--bg-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            color: var(--text-color);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            background-color: var(--section-bg);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid rgba(13, 148, 136, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-color);
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--hover-accent);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: var(--section-bg);
+            padding: 20px 0;
+            text-align: center;
+            border-top: 2px solid var(--accent-color);
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer ul li a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer ul li a:hover {
+            color: var(--hover-accent);
+        }
+
+        .silhouette {
+            opacity: 0.05;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 0 C60 20 80 20 90 10 C100 0 100 30 90 50 C80 70 60 80 50 100 C40 80 20 70 10 50 C0 30 0 0 10 10 C20 20 40 20 50 0" fill="%230D9488" opacity="0.5"/></svg>') no-repeat;
+            background-size: contain;
+            z-index: -1;
+        }
+
+        a {
+            transition: all 0.3s ease;
+        }
+
+        .feature-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="silhouette"></div>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="Logo" class="logo">
+                <h1>Anthony</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#biografia">Biografía</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#datos-curiosos">Datos Curiosos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="biografia">
+            <h2>Biografía</h2>
+            <p>¡Hola! Soy Anthony, apasionado/a por la tecnología y la creatividad. Soy graduado/a en Ingenieria de Sistemas. Mi principal fortaleza es combinar habilidades técnicas como React y PrismaDB con un enfoque innovador para resolver problemas de TI. Me encanta aprender constantemente y mantenerme actualizado/a en tendencias de Tecnologia y Juegos. En el futuro, quiero liderar proyectos que fusionen tecnología y diseño para impactar positivamente en las vidas de las personas.</p>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>
+                    <h3>Fotografía urbana</h3>
+                    <p>Me fascina capturar momentos cotidianos que a menudo pasan desapercibidos, como la interacción de la luz y las sombras en edificios antiguos o la expresión genuina de las personas en su día a día.</p>
+                </li>
+                <li>
+                    <h3>Explorar cafés locales</h3>
+                    <p>Tengo una pasión por descubrir pequeños cafés en la ciudad, probando sus especialidades y documentando mi experiencia en un blog personal.</p>
+                </li>
+                <li>
+                    <h3>Tocar el ukulele</h3>
+                    <p>Aprendí de forma autodidacta y disfruto interpretar canciones modernas con un toque único. Es mi manera de desconectarme y expresarme creativamente.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="datos-curiosos">
+            <h2>Datos Curiosos</h2>
+            <ul>
+                <li>Tengo habilidad para aprender a tocar instrumentos musicales.</li>
+            </ul>
+            <img src="assets/men_guitar.png" alt="Ilustración artística de músico tocando guitarra" class="feature-image">
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>Sígueme en redes sociales</h2>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+
